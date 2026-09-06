@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420"
+     role="img" aria-labelledby="heroTitle heroDesc" preserveAspectRatio="xMidYMid meet">
+  <title id="heroTitle">Ayush Kumar — Software, AI and Hardware</title>
+  <desc id="heroDesc">Dark instrumentation panel. Left: the name Ayush Kumar above the line
+  "Software times AI times Hardware" and the phrase "Building things that should exist".
+  Right: a system diagram in which Software, AI and Hardware feed a shared bus into Product,
+  which in turn feeds Real World. Footer strip reads ayush-techx and B.Tech Electrical
+  Engineering 2028, MIT Muzaffarpur.</desc>
+
+  <defs>
+    <linearGradient id="hPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1016"/>
+      <stop offset="0.55" stop-color="#080D13"/>
+      <stop offset="1" stop-color="#05070A"/>
+    </linearGradient>
+    <radialGradient id="hGlow" cx="0.72" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hScan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="hClip"><rect x="0" y="0" width="900" height="420" rx="14"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace; }
+    .sans { font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+    .n-lbl { font-size: 16px; letter-spacing: 1.5px; }
+    .dot   { animation: flow 2.8s linear infinite; }
+    .d2 { animation-delay: .55s; } .d3 { animation-delay: 1.1s; }
+    .busdot { animation: flow2 2.8s linear infinite; }
+    .halo  { animation: breathe 4.6s ease-in-out infinite; }
+    .scan  { animation: sweep 11s linear infinite; }
+    .cursor{ animation: blink 1.15s step-end infinite; }
+    @keyframes flow  { 0% { transform: translateX(0);   opacity: 0 }
+                       18% { opacity: 1 }
+                       82% { opacity: 1 }
+                       100%{ transform: translateX(26px); opacity: 0 } }
+    @keyframes flow2 { 0% { transform: translateX(0);   opacity: 0 }
+                       20% { opacity: 1 }
+                       80% { opacity: 1 }
+                       100%{ transform: translateX(34px); opacity: 0 } }
+    @keyframes breathe { 0%,100% { opacity: .18 } 50% { opacity: .5 } }
+    @keyframes sweep   { 0% { transform: translateY(-8px) } 100% { transform: translateY(428px) } }
+    @keyframes blink   { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) {
+      .dot,.busdot,.halo,.scan,.cursor { animation: none; }
+      .dot,.busdot { opacity: .85; }
+      .halo { opacity: .34; }
+    }
+  </style>
+
+  <g clip-path="url(#hClip)">
+    <rect width="900" height="420" fill="url(#hPanel)"/>
+    <rect width="900" height="420" fill="url(#hGlow)"/>
+
+    <!-- perspective floor grid -->
+    <g stroke="#16202B" stroke-width="1" opacity="0.85">
+      <line x1="450" y1="300" x2="-260" y2="420"/>
+      <line x1="450" y1="300" x2="-40"  y2="420"/>
+      <line x1="450" y1="300" x2="160"  y2="420"/>
+      <line x1="450" y1="300" x2="330"  y2="420"/>
+      <line x1="450" y1="300" x2="450"  y2="420"/>
+      <line x1="450" y1="300" x2="570"  y2="420"/>
+      <line x1="450" y1="300" x2="740"  y2="420"/>
+      <line x1="450" y1="300" x2="940"  y2="420"/>
+      <line x1="450" y1="300" x2="1160" y2="420"/>
+      <line x1="0" y1="322" x2="900" y2="322"/>
+      <line x1="0" y1="342" x2="900" y2="342"/>
+      <line x1="0" y1="370" x2="900" y2="370"/>
+      <line x1="0" y1="406" x2="900" y2="406"/>
+    </g>
+
+    <!-- corner ticks -->
+    <g stroke="#1E2A38" stroke-width="1.5" fill="none">
+      <path d="M20 40 V20 H40"/><path d="M860 20 H880 V40"/>
+      <path d="M20 380 V400 H40"/><path d="M880 380 V400 H860"/>
+    </g>
+
+    <!-- identity block -->
+    <text class="mono" x="56" y="106" font-size="12.5" letter-spacing="3.4" fill="#8B98A5">// ENGINEER &#183; BUILDER</text>
+    <text class="sans" x="56" y="164" font-size="52" font-weight="700" letter-spacing="-0.5" fill="#E6EDF3">AYUSH KUMAR</text>
+    <rect x="56" y="182" width="224" height="2" fill="url(#hRule)"/>
+    <text class="mono" x="56" y="218" font-size="21" letter-spacing="3.2" fill="#22D3EE">SOFTWARE &#215; AI &#215; HARDWARE</text>
+    <text class="sans" x="56" y="256" font-size="17" fill="#8B98A5">Building things that should exist.</text>
+    <g class="mono" font-size="13" fill="#8B98A5">
+      <text x="56" y="296">$ <tspan fill="#E6EDF3">whoami</tspan><tspan class="cursor" fill="#22D3EE"> &#9608;</tspan></text>
+    </g>
+
+    <!-- system diagram -->
+    <g class="mono">
+      <!-- stubs + bus -->
+      <g stroke="#1E2A38" stroke-width="1.5" fill="none">
+        <path d="M696 104 H722"/><path d="M696 160 H722"/><path d="M696 216 H722"/>
+        <path d="M722 104 V216"/>
+        <path d="M722 160 H756"/>
+        <path d="M818 180 V256"/>
+      </g>
+      <path d="M812 250 L818 258 L824 250 Z" fill="#1E2A38"/>
+
+      <!-- SOFTWARE -->
+      <rect x="536" y="84" width="160" height="40" rx="5" fill="#0E141C" stroke="#4C8DFF" stroke-opacity="0.55"/>
+      <text class="n-lbl" x="616" y="109" text-anchor="middle" fill="#4C8DFF">SOFTWARE</text>
+      <circle class="dot" cx="699" cy="104" r="2.6" fill="#4C8DFF"/>
+      <!-- AI -->
+      <rect x="536" y="140" width="160" height="40" rx="5" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.55"/>
+      <text class="n-lbl" x="616" y="165" text-anchor="middle" fill="#22D3EE">AI</text>
+      <circle class="dot d2" cx="699" cy="160" r="2.6" fill="#22D3EE"/>
+      <!-- HARDWARE -->
+      <rect x="536" y="196" width="160" height="40" rx="5" fill="#0E141C" stroke="#FFB547" stroke-opacity="0.55"/>
+      <text class="n-lbl" x="616" y="221" text-anchor="middle" fill="#FFB547">HARDWARE</text>
+      <circle class="dot d3" cx="699" cy="216" r="2.6" fill="#FFB547"/>
+
+      <!-- PRODUCT -->
+      <rect class="halo" x="750" y="134" width="136" height="52" rx="8" fill="#22D3EE" opacity="0.18"/>
+      <rect x="756" y="140" width="124" height="40" rx="5" fill="#0B1016" stroke="#22D3EE"/>
+      <text class="n-lbl" x="818" y="165" text-anchor="middle" fill="#E6EDF3">PRODUCT</text>
+      <circle class="busdot" cx="725" cy="160" r="2.8" fill="#22D3EE"/>
+
+      <!-- REAL WORLD -->
+      <rect x="756" y="256" width="124" height="36" rx="5" fill="#0B1016" stroke="#1E2A38" stroke-dasharray="4 3"/>
+      <text x="818" y="279" font-size="14" letter-spacing="1.2" text-anchor="middle" fill="#8B98A5">REAL WORLD</text>
+    </g>
+
+    <!-- footer strip -->
+    <line x1="56" y1="358" x2="844" y2="358" stroke="#16202B" stroke-width="1"/>
+    <text class="mono" x="56" y="382" font-size="12.5" letter-spacing="1.6" fill="#8B98A5">ayush-techx</text>
+    <text class="mono" x="844" y="382" font-size="12.5" letter-spacing="1.2" text-anchor="end" fill="#8B98A5">B.Tech EE &#8217;28 &#183; MIT MUZAFFARPUR</text>
+
+    <rect class="scan" x="0" y="0" width="900" height="2" fill="url(#hScan)" opacity="0.3"/>
+    <rect x="0.5" y="0.5" width="899" height="419" rx="14" fill="none" stroke="#16202B"/>
+  </g>
+</svg>

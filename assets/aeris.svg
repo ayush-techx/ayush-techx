@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430"
+     role="img" aria-labelledby="aTitle aDesc" preserveAspectRatio="xMidYMid meet">
+  <title id="aTitle">AERIS — Triple-Autonomous Industrial Electrostatic Precipitator</title>
+  <desc id="aDesc">Process cross-section of a retrofit electrostatic precipitator. Particulate-laden
+  flue gas enters from the left, passes a high-voltage ionization electrode, and particles are drawn
+  onto two collector plates by an electrostatic field. A motor-driven rapping assembly dislodges the
+  captured material, which falls into a sealed soot collection hopper; cleaner gas exits right.
+  Below, three cards describe the autonomy layers: 01 power-assisted (solar, waste-heat TEG and
+  kinetic harvesting), 02 maintenance-autonomous (motor and blade rapping assembly), 03
+  data-autonomous (ESP32, sensors and telemetry). A status badge reads prototype build in
+  progress.</desc>
+
+  <defs>
+    <linearGradient id="aPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1016"/><stop offset="1" stop-color="#05070A"/>
+    </linearGradient>
+    <linearGradient id="aDuct" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E141C"/><stop offset="0.5" stop-color="#0B1016"/>
+      <stop offset="1" stop-color="#0E141C"/>
+    </linearGradient>
+    <radialGradient id="aHv" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFB547" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFB547" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="aClip"><rect x="0" y="0" width="900" height="430" rx="14"/></clipPath>
+    <clipPath id="aDuctClip"><rect x="62" y="112" width="636" height="136"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .fl    { animation: fieldPulse 3.4s ease-in-out infinite; }
+    .f2 { animation-delay: .42s } .f3 { animation-delay: .84s } .f4 { animation-delay: 1.26s }
+    .drift { animation: drift 5.2s linear infinite; }
+    .dr2 { animation-delay: 1.3s } .dr3 { animation-delay: 2.6s } .dr4 { animation-delay: 3.9s }
+    .snapU { animation: snapUp 4.4s ease-in infinite; }
+    .snapD { animation: snapDown 4.4s ease-in infinite; animation-delay: 2.2s }
+    .su2 { animation-delay: 1.1s } .sd2 { animation-delay: 3.3s }
+    .clean { animation: exitFlow 5.2s linear infinite; }
+    .cl2 { animation-delay: 2.6s }
+    .rap { animation: rap 2.6s ease-in-out infinite; }
+    .hvGlow { animation: hv 2.1s ease-in-out infinite; }
+    @keyframes fieldPulse { 0%,100% { opacity:.12 } 50% { opacity:.42 } }
+    @keyframes drift { 0% { transform:translateX(0); opacity:0 } 12% { opacity:.85 }
+                       88% { opacity:.85 } 100% { transform:translateX(150px); opacity:0 } }
+    @keyframes snapUp { 0% { transform:translate(0,0); opacity:0 } 15% { opacity:.9 }
+                        78% { transform:translate(104px,-44px); opacity:.9 }
+                        100% { transform:translate(112px,-50px); opacity:0 } }
+    @keyframes snapDown { 0% { transform:translate(0,0); opacity:0 } 15% { opacity:.9 }
+                          78% { transform:translate(104px,44px); opacity:.9 }
+                          100% { transform:translate(112px,50px); opacity:0 } }
+    @keyframes exitFlow { 0% { transform:translateX(0); opacity:0 } 25% { opacity:.4 }
+                          100% { transform:translateX(120px); opacity:0 } }
+    @keyframes rap { 0%,42%,74%,100% { transform:translateY(0) }
+                     50% { transform:translateY(2.5px) } 58% { transform:translateY(-1px) }
+                     66% { transform:translateY(1.5px) } }
+    @keyframes hv { 0%,100% { opacity:.30 } 50% { opacity:.72 } }
+    @media (prefers-reduced-motion: reduce) {
+      .fl,.drift,.snapU,.snapD,.clean,.rap,.hvGlow { animation: none; }
+      .fl { opacity: .3 }
+      .drift, .snapU, .snapD { opacity: .8 }
+      .clean { opacity: .35 }
+      .hvGlow { opacity: .5 }
+    }
+  </style>
+
+  <g clip-path="url(#aClip)">
+    <rect width="900" height="430" fill="url(#aPanel)"/>
+
+    <!-- header -->
+    <text class="sans" x="32" y="45" font-size="27" font-weight="700" letter-spacing="3" fill="#E6EDF3">AERIS</text>
+    <line x1="140" y1="26" x2="140" y2="52" stroke="#1E2A38"/>
+    <text class="mono" x="156" y="36" font-size="11" letter-spacing="1.4" fill="#22D3EE">TRIPLE-AUTONOMOUS INDUSTRIAL</text>
+    <text class="mono" x="156" y="51" font-size="11" letter-spacing="1.4" fill="#8B98A5">ELECTROSTATIC PRECIPITATOR &#183; RETROFIT</text>
+    <rect x="656" y="25" width="212" height="26" rx="13" fill="#0E141C" stroke="#1E2A38"/>
+    <circle class="hvGlow" cx="675" cy="38" r="3.5" fill="#22D3EE"/>
+    <text class="mono" x="688" y="42" font-size="9.5" letter-spacing="0.6" fill="#8B98A5">PROTOTYPE BUILD IN PROGRESS</text>
+
+    <!-- flow labels -->
+    <text class="mono" x="62" y="100" font-size="10.5" letter-spacing="1.1" fill="#8B98A5">INLET</text>
+    <text class="mono" x="698" y="100" font-size="10.5" letter-spacing="1.1" text-anchor="end" fill="#8B98A5">OUTLET</text>
+
+    <!-- duct -->
+    <rect x="62" y="112" width="636" height="136" fill="url(#aDuct)"/>
+    <line x1="62" y1="112" x2="698" y2="112" stroke="#1E2A38" stroke-width="2.5"/>
+    <line x1="62" y1="248" x2="698" y2="248" stroke="#1E2A38" stroke-width="2.5"/>
+
+    <g clip-path="url(#aDuctClip)">
+      <!-- high-voltage ionization electrode -->
+      <ellipse class="hvGlow" cx="176" cy="180" rx="34" ry="70" fill="url(#aHv)"/>
+      <line x1="176" y1="118" x2="176" y2="242" stroke="#FFB547" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.8"/>
+      <circle cx="176" cy="118" r="4" fill="#FFB547"/>
+      <circle cx="176" cy="242" r="4" fill="#FFB547"/>
+
+      <!-- electrostatic field between collector plates -->
+      <g stroke="#FFB547" stroke-width="1.2">
+        <line class="fl"    x1="252" y1="140" x2="252" y2="221"/>
+        <line class="fl f2" x1="288" y1="140" x2="288" y2="221"/>
+        <line class="fl f3" x1="324" y1="140" x2="324" y2="221"/>
+        <line class="fl f4" x1="360" y1="140" x2="360" y2="221"/>
+        <line class="fl"    x1="396" y1="140" x2="396" y2="221"/>
+        <line class="fl f2" x1="432" y1="140" x2="432" y2="221"/>
+        <line class="fl f3" x1="468" y1="140" x2="468" y2="221"/>
+        <line class="fl f4" x1="504" y1="140" x2="504" y2="221"/>
+        <line class="fl"    x1="540" y1="140" x2="540" y2="221"/>
+      </g>
+
+      <!-- collector plates -->
+      <rect x="232" y="128" width="330" height="9" rx="2" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.7"/>
+      <rect x="232" y="223" width="330" height="9" rx="2" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.7"/>
+
+      <!-- inbound particulate -->
+      <g fill="#8B98A5">
+        <circle class="drift"     cx="72" cy="150" r="2.4"/>
+        <circle class="drift dr2" cx="72" cy="180" r="3"/>
+        <circle class="drift dr3" cx="72" cy="208" r="2.2"/>
+        <circle class="drift dr4" cx="72" cy="166" r="2.6"/>
+        <circle class="drift dr2" cx="72" cy="228" r="2"/>
+      </g>
+      <!-- particulate migrating onto the plates -->
+      <g fill="#FFB547">
+        <circle class="snapU"     cx="246" cy="186" r="2.6"/>
+        <circle class="snapD"     cx="246" cy="176" r="2.6"/>
+        <circle class="snapU su2" cx="352" cy="188" r="2.2"/>
+        <circle class="snapD sd2" cx="352" cy="174" r="2.2"/>
+      </g>
+      <!-- cleaner gas leaving -->
+      <g fill="#8B98A5">
+        <circle class="clean"     cx="576" cy="172" r="1.6"/>
+        <circle class="clean cl2" cx="576" cy="196" r="1.4"/>
+      </g>
+    </g>
+
+    <!-- rapping assembly -->
+    <g class="rap">
+      <rect x="372" y="82" width="52" height="24" rx="4" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.6"/>
+      <text class="mono" x="398" y="99" font-size="12" text-anchor="middle" fill="#22D3EE">M</text>
+      <line x1="398" y1="106" x2="398" y2="127" stroke="#22D3EE" stroke-opacity="0.6" stroke-width="1.6"/>
+      <path d="M390 126 H406" stroke="#22D3EE" stroke-opacity="0.8" stroke-width="2.5"/>
+    </g>
+    <text class="mono" x="434" y="99" font-size="10" letter-spacing="0.8" fill="#8B98A5">RAPPING ASSEMBLY</text>
+    <text class="mono" x="176" y="103" font-size="10" letter-spacing="0.8" text-anchor="middle" fill="#FFB547">HV IONIZER</text>
+
+    <!-- sealed collection hopper -->
+    <path d="M318 248 H502 L452 300 H368 Z" fill="#0E141C" stroke="#1E2A38" stroke-width="1.5"/>
+    <path d="M372 291 H448 L441 300 H379 Z" fill="#3A2E1A"/>
+    <text class="mono" x="514" y="272" font-size="10" letter-spacing="0.8" fill="#8B98A5">SEALED SOOT COLLECTION</text>
+    <line x1="502" y1="268" x2="510" y2="268" stroke="#1E2A38"/>
+    <text class="mono" x="232" y="272" font-size="10" letter-spacing="0.8" text-anchor="end" fill="#8B98A5">COLLECTOR PLATES</text>
+    <line x1="238" y1="268" x2="300" y2="268" stroke="#1E2A38"/>
+
+    <!-- autonomy layers -->
+    <rect x="32" y="316" width="268" height="86" rx="7" fill="#0B1016" stroke="#1E2A38"/>
+    <text class="mono" x="48" y="342" font-size="11.5" letter-spacing="1" fill="#22D3EE">01 / POWER-ASSISTED</text>
+    <text class="sans" x="48" y="364" font-size="12" fill="#8B98A5">Solar + waste-heat TEG + kinetic</text>
+    <text class="sans" x="48" y="382" font-size="12" fill="#8B98A5">energy harvesting</text>
+
+    <rect x="316" y="316" width="268" height="86" rx="7" fill="#0B1016" stroke="#1E2A38"/>
+    <text class="mono" x="332" y="342" font-size="11.5" letter-spacing="1" fill="#22D3EE">02 / MAINTENANCE-AUTONOMOUS</text>
+    <text class="sans" x="332" y="364" font-size="12" fill="#8B98A5">Motor + blade rapping assembly</text>
+    <text class="sans" x="332" y="382" font-size="12" fill="#8B98A5">reduces manual cleaning</text>
+
+    <rect x="600" y="316" width="268" height="86" rx="7" fill="#0B1016" stroke="#1E2A38"/>
+    <text class="mono" x="616" y="342" font-size="11.5" letter-spacing="1" fill="#22D3EE">03 / DATA-AUTONOMOUS</text>
+    <text class="sans" x="616" y="364" font-size="12" fill="#8B98A5">ESP32 + sensors + telemetry</text>
+    <text class="sans" x="616" y="382" font-size="12" fill="#8B98A5">for continuous monitoring</text>
+
+    <rect x="0.5" y="0.5" width="899" height="429" rx="14" fill="none" stroke="#16202B"/>
+  </g>
+</svg>

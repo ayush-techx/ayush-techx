@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470"
+     role="img" aria-labelledby="sTitle sDesc" preserveAspectRatio="xMidYMid meet">
+  <title id="sTitle">Technical stack, grouped by depth of experience</title>
+  <desc id="sDesc">Three concentric orbital rings around a core labelled ayush-techx. The inner
+  ring, used professionally, holds JavaScript, React, Node.js and SAP UI5 with BTP. The middle
+  ring, building with, holds Python, FastAPI, TypeScript, ESP32 and Ollama. The outer ring,
+  exploring, holds PyTorch, Docker, system design and AI agents. Ring position indicates depth of
+  experience, not proficiency percentage.</desc>
+
+  <defs>
+    <linearGradient id="oPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1016"/><stop offset="1" stop-color="#05070A"/>
+    </linearGradient>
+    <radialGradient id="oCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="oClip"><rect x="0" y="0" width="900" height="470" rx="14"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .pill { font-size: 11.5px; letter-spacing: 0.4px; }
+    .spinA { animation: spin 38s linear infinite; }
+    .spinB { animation: spin 54s linear infinite reverse; }
+    .spinC { animation: spin 72s linear infinite; }
+    .march { animation: march 3.2s linear infinite; }
+    .marchS { animation: march 5.6s linear infinite; }
+    .coreP { animation: corePulse 5.4s ease-in-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg) } }
+    @keyframes march { to { stroke-dashoffset: -11 } }
+    @keyframes corePulse { 0%,100% { opacity: .5 } 50% { opacity: 1 } }
+    @media (prefers-reduced-motion: reduce) {
+      .spinA,.spinB,.spinC,.march,.marchS,.coreP { animation: none; }
+      .coreP { opacity: .8 }
+    }
+  </style>
+
+  <g clip-path="url(#oClip)">
+    <rect width="900" height="470" fill="url(#oPanel)"/>
+
+    <text class="mono" x="32" y="44" font-size="12.5" letter-spacing="3" fill="#8B98A5">// TECHNICAL STACK</text>
+    <text class="mono" x="868" y="44" font-size="10.5" letter-spacing="1.2" text-anchor="end" fill="#8B98A5">RING = DEPTH OF EXPERIENCE</text>
+
+    <!-- rings -->
+    <ellipse cx="450" cy="230" rx="390" ry="136" fill="none" stroke="#8B98A5" stroke-opacity="0.4"
+             stroke-width="1" stroke-dasharray="2 7" class="marchS"/>
+    <ellipse cx="450" cy="230" rx="270" ry="94" fill="none" stroke="#4C8DFF" stroke-opacity="0.4"
+             stroke-width="1.1" stroke-dasharray="6 5" class="march"/>
+    <ellipse cx="450" cy="230" rx="150" ry="52" fill="none" stroke="#22D3EE" stroke-opacity="0.5"
+             stroke-width="1.3"/>
+
+    <!-- orbiting markers (circle rotated inside a squashed group traces the ellipse) -->
+    <g transform="translate(450,230) scale(1,0.3467)">
+      <g class="spinA"><ellipse cx="150" cy="0" rx="3.2" ry="9.2" fill="#22D3EE"/></g>
+    </g>
+    <g transform="translate(450,230) scale(1,0.3481)">
+      <g class="spinB"><ellipse cx="270" cy="0" rx="3" ry="8.6" fill="#4C8DFF"/></g>
+    </g>
+    <g transform="translate(450,230) scale(1,0.3487)">
+      <g class="spinC"><ellipse cx="390" cy="0" rx="2.6" ry="7.5" fill="#8B98A5"/></g>
+    </g>
+
+    <!-- core -->
+    <circle class="coreP" cx="450" cy="230" r="70" fill="url(#oCore)"/>
+    <rect x="401" y="217" width="98" height="26" rx="13" fill="#0B1016" stroke="#22D3EE"/>
+    <text class="mono pill" x="450" y="234" text-anchor="middle" fill="#E6EDF3">ayush-techx</text>
+
+    <!-- inner ring: used professionally -->
+    <g>
+      <rect x="254" y="217" width="91" height="26" rx="13" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.8"/>
+      <text class="mono pill" x="299" y="234" text-anchor="middle" fill="#22D3EE">JavaScript</text>
+      <rect x="571" y="217" width="57" height="26" rx="13" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.8"/>
+      <text class="mono pill" x="599" y="234" text-anchor="middle" fill="#22D3EE">React</text>
+      <rect x="415" y="269" width="70" height="26" rx="13" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.8"/>
+      <text class="mono pill" x="450" y="286" text-anchor="middle" fill="#22D3EE">Node.js</text>
+      <rect x="394" y="165" width="112" height="26" rx="13" fill="#0E141C" stroke="#22D3EE" stroke-opacity="0.8"/>
+      <text class="mono pill" x="450" y="182" text-anchor="middle" fill="#22D3EE">SAP UI5 / BTP</text>
+    </g>
+
+    <!-- middle ring: building with -->
+    <g>
+      <rect x="675" y="246" width="63" height="26" rx="13" fill="#0E141C" stroke="#4C8DFF" stroke-opacity="0.7"/>
+      <text class="mono pill" x="706" y="263" text-anchor="middle" fill="#4C8DFF">Python</text>
+      <rect x="415" y="311" width="70" height="26" rx="13" fill="#0E141C" stroke="#4C8DFF" stroke-opacity="0.7"/>
+      <text class="mono pill" x="450" y="328" text-anchor="middle" fill="#4C8DFF">FastAPI</text>
+      <rect x="147" y="246" width="91" height="26" rx="13" fill="#0E141C" stroke="#4C8DFF" stroke-opacity="0.7"/>
+      <text class="mono pill" x="192" y="263" text-anchor="middle" fill="#4C8DFF">TypeScript</text>
+      <rect x="262" y="141" width="57" height="26" rx="13" fill="#0E141C" stroke="#4C8DFF" stroke-opacity="0.7"/>
+      <text class="mono pill" x="290" y="158" text-anchor="middle" fill="#4C8DFF">ESP32</text>
+      <rect x="577" y="141" width="63" height="26" rx="13" fill="#0E141C" stroke="#4C8DFF" stroke-opacity="0.7"/>
+      <text class="mono pill" x="608" y="158" text-anchor="middle" fill="#4C8DFF">Ollama</text>
+    </g>
+
+    <!-- outer ring: exploring -->
+    <g>
+      <rect x="691" y="313" width="70" height="26" rx="13" fill="#0B1016" stroke="#8B98A5" stroke-opacity="0.5"/>
+      <text class="mono pill" x="726" y="330" text-anchor="middle" fill="#8B98A5">PyTorch</text>
+      <rect x="142" y="313" width="63" height="26" rx="13" fill="#0B1016" stroke="#8B98A5" stroke-opacity="0.5"/>
+      <text class="mono pill" x="173" y="330" text-anchor="middle" fill="#8B98A5">Docker</text>
+      <rect x="118" y="121" width="112" height="26" rx="13" fill="#0B1016" stroke="#8B98A5" stroke-opacity="0.5"/>
+      <text class="mono pill" x="174" y="138" text-anchor="middle" fill="#8B98A5">System design</text>
+      <rect x="684" y="121" width="84" height="26" rx="13" fill="#0B1016" stroke="#8B98A5" stroke-opacity="0.5"/>
+      <text class="mono pill" x="726" y="138" text-anchor="middle" fill="#8B98A5">AI agents</text>
+    </g>
+
+    <!-- legend -->
+    <line x1="32" y1="436" x2="56" y2="436" stroke="#22D3EE" stroke-width="1.6"/>
+    <text class="mono" x="64" y="440" font-size="10.5" letter-spacing="1.1" fill="#8B98A5">USED PROFESSIONALLY</text>
+    <line x1="230" y1="436" x2="254" y2="436" stroke="#4C8DFF" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <text class="mono" x="262" y="440" font-size="10.5" letter-spacing="1.1" fill="#8B98A5">BUILDING WITH</text>
+    <line x1="390" y1="436" x2="414" y2="436" stroke="#8B98A5" stroke-width="1.6" stroke-dasharray="2 7"/>
+    <text class="mono" x="422" y="440" font-size="10.5" letter-spacing="1.1" fill="#8B98A5">EXPLORING</text>
+
+    <rect x="0.5" y="0.5" width="899" height="469" rx="14" fill="none" stroke="#16202B"/>
+  </g>
+</svg>

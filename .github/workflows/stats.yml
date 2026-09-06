@@ -1,0 +1,42 @@
+name: Refresh language telemetry card
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # The generator refuses to write an empty card, so a failed API call
+      # leaves the previously committed assets/stats.svg in place.
+      - name: Generate assets/stats.svg
+        run: node .github/scripts/gen-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if the card actually changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain assets/stats.svg)" ]; then
+            git add assets/stats.svg
+            git commit -m "chore: refresh language telemetry card"
+            git push
+          else
+            echo "No change to assets/stats.svg — nothing to commit."
+          fi

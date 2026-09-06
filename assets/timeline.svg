@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280"
+     role="img" aria-labelledby="tTitle tDesc" preserveAspectRatio="xMidYMid meet">
+  <title id="tTitle">Timeline — AERIS track and professional software track</title>
+  <desc id="tDesc">Two parallel tracks. AERIS track: March 2026, Chemathon second prize; April
+  2026, provisional patent filed; undated, IIT Patna pre-incubation and a two lakh rupee innovation
+  grant; July to August 2026, AIC-Nalanda IDEANEST 7.0; now, prototype build in progress. Software
+  and professional track, undated in sequence: Associate Technical Consultant at NSTRAT; SAP UI5,
+  Fiori Elements and BTP delivery; team lead of roughly four engineers; Meeting Copilot in private
+  beta.</desc>
+
+  <defs>
+    <linearGradient id="tlPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1016"/><stop offset="1" stop-color="#05070A"/>
+    </linearGradient>
+    <clipPath id="tlClip"><rect x="0" y="0" width="900" height="280" rx="14"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .dte { font-size: 10px; letter-spacing: 1.1px; }
+    .lbl { font-size: 11.5px; }
+  </style>
+
+  <g clip-path="url(#tlClip)">
+    <rect width="900" height="280" fill="url(#tlPanel)"/>
+    <text class="mono" x="32" y="38" font-size="12.5" letter-spacing="3" fill="#8B98A5">// TIMELINE</text>
+
+    <!-- ===== AERIS track ===== -->
+    <text class="mono" x="32" y="74" font-size="10.5" letter-spacing="2.2" fill="#22D3EE">AERIS</text>
+    <line x1="48" y1="112" x2="852" y2="112" stroke="#16202B" stroke-width="1.5"/>
+
+    <g class="mono dte" fill="#8B98A5" text-anchor="middle">
+      <text x="116" y="96">MAR 2026</text>
+      <text x="284" y="96">APR 2026</text>
+      <text x="452" y="96">&#8212;</text>
+      <text x="620" y="96">JUL&#8211;AUG 2026</text>
+      <text x="788" y="96">NOW</text>
+    </g>
+
+    <g fill="#0B1016" stroke="#22D3EE" stroke-width="1.6">
+      <circle cx="116" cy="112" r="5"/>
+      <circle cx="284" cy="112" r="5"/>
+      <circle cx="452" cy="112" r="5"/>
+      <circle cx="620" cy="112" r="5"/>
+      <circle cx="788" cy="112" r="5" fill="#22D3EE"/>
+    </g>
+
+    <g class="sans lbl" text-anchor="middle">
+      <text x="116" y="136" fill="#E6EDF3">Chemathon</text>
+      <text x="116" y="152" fill="#8B98A5">2nd Prize</text>
+      <text x="284" y="136" fill="#E6EDF3">Provisional patent</text>
+      <text x="284" y="152" fill="#8B98A5">filed</text>
+      <text x="452" y="136" fill="#E6EDF3">IIT Patna pre-incubation</text>
+      <text x="452" y="152" fill="#8B98A5">&#8377;2 Lakh Innovation Grant</text>
+      <text x="620" y="136" fill="#E6EDF3">AIC-Nalanda</text>
+      <text x="620" y="152" fill="#8B98A5">IDEANEST 7.0</text>
+      <text x="788" y="136" fill="#E6EDF3">Prototype build</text>
+      <text x="788" y="152" fill="#8B98A5">in progress</text>
+    </g>
+
+    <!-- ===== software / professional track ===== -->
+    <text class="mono" x="32" y="186" font-size="10.5" letter-spacing="2.2" fill="#4C8DFF">SOFTWARE &#183; PROFESSIONAL</text>
+    <line x1="48" y1="214" x2="852" y2="214" stroke="#16202B" stroke-width="1.5"/>
+
+    <g fill="#0B1016" stroke="#4C8DFF" stroke-width="1.6">
+      <circle cx="116" cy="214" r="5"/>
+      <circle cx="340" cy="214" r="5"/>
+      <circle cx="564" cy="214" r="5"/>
+      <circle cx="788" cy="214" r="5" fill="#4C8DFF"/>
+    </g>
+
+    <g class="sans lbl" text-anchor="middle">
+      <text x="116" y="238" fill="#E6EDF3">Associate Technical</text>
+      <text x="116" y="254" fill="#8B98A5">Consultant, NSTRAT</text>
+      <text x="340" y="238" fill="#E6EDF3">SAP UI5 / Fiori Elements</text>
+      <text x="340" y="254" fill="#8B98A5">BTP delivery</text>
+      <text x="564" y="238" fill="#E6EDF3">Team lead</text>
+      <text x="564" y="254" fill="#8B98A5">~4 engineers</text>
+      <text x="788" y="238" fill="#E6EDF3">Meeting Copilot</text>
+      <text x="788" y="254" fill="#8B98A5">private beta</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="899" height="279" rx="14" fill="none" stroke="#16202B"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+# Local-only strategy document — never commit
+PROFILE_CONTEXT.md
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
