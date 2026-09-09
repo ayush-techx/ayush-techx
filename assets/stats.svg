@@ -2,7 +2,7 @@
      role="img" aria-labelledby="stTitle stDesc" preserveAspectRatio="xMidYMid meet">
   <title id="stTitle">Language distribution across public repositories</title>
   <desc id="stDesc">Stacked bar showing language distribution by bytes across 5 public
-  repositories: JavaScript 50.0 percent, Java 15.7 percent, CSS 13.4 percent, HTML 12.9 percent, C++ 8.0 percent. Generated from the GitHub API on 2026-09-08. Private and in-progress
+  repositories: JavaScript 50.8 percent, CSS 16.3 percent, Java 14.0 percent, HTML 11.8 percent, C++ 7.1 percent. Generated from the GitHub API on 2026-09-09. Private and in-progress
   work is not included.</desc>
   <defs>
     <linearGradient id="stPanel" x1="0" y1="0" x2="0" y2="1">
@@ -18,26 +18,26 @@
   <g clip-path="url(#stClip)">
     <rect width="900" height="220" fill="url(#stPanel)"/>
     <text class="mono" x="32" y="42" font-size="12.5" letter-spacing="3" fill="#8B98A5">// PUBLIC REPOSITORY TELEMETRY</text>
-    <text class="mono" x="868" y="42" font-size="10.5" letter-spacing="1.2" text-anchor="end" fill="#8B98A5">UPDATED 2026-09-08</text>
+    <text class="mono" x="868" y="42" font-size="10.5" letter-spacing="1.2" text-anchor="end" fill="#8B98A5">UPDATED 2026-09-09</text>
     <text class="mono" x="32" y="66" font-size="10.5" letter-spacing="1.2" fill="#22D3EE">LANGUAGE DISTRIBUTION BY BYTES</text>
     <g clip-path="url(#stBar)">
       <rect x="32" y="78" width="836" height="22" fill="#0E141C"/>
-      <rect x="32.00" y="78" width="417.88" height="22" fill="#22D3EE"/>
-      <rect x="449.88" y="78" width="131.46" height="22" fill="#4C8DFF"/>
-      <rect x="581.33" y="78" width="111.67" height="22" fill="#FFB547"/>
-      <rect x="693.00" y="78" width="108.08" height="22" fill="#7C8CF8"/>
-      <rect x="801.08" y="78" width="66.92" height="22" fill="#5EEAD4"/>
+      <rect x="32.00" y="78" width="425.10" height="22" fill="#22D3EE"/>
+      <rect x="457.10" y="78" width="136.02" height="22" fill="#4C8DFF"/>
+      <rect x="593.12" y="78" width="116.79" height="22" fill="#FFB547"/>
+      <rect x="709.91" y="78" width="98.65" height="22" fill="#7C8CF8"/>
+      <rect x="808.55" y="78" width="59.45" height="22" fill="#5EEAD4"/>
     </g>
     <rect x="32" y="78" width="836" height="22" rx="11" fill="none" stroke="#1E2A38"/>
     <g>
-      <rect x="32.0" y="132" width="10" height="10" rx="2" fill="#22D3EE"/><text class="mono lg" x="50.0" y="141" fill="#E6EDF3">JavaScript</text><text class="mono lg" x="50.0" y="158" fill="#8B98A5">50.0%</text>
-      <rect x="199.2" y="132" width="10" height="10" rx="2" fill="#4C8DFF"/><text class="mono lg" x="217.2" y="141" fill="#E6EDF3">Java</text><text class="mono lg" x="217.2" y="158" fill="#8B98A5">15.7%</text>
-      <rect x="366.4" y="132" width="10" height="10" rx="2" fill="#FFB547"/><text class="mono lg" x="384.4" y="141" fill="#E6EDF3">CSS</text><text class="mono lg" x="384.4" y="158" fill="#8B98A5">13.4%</text>
-      <rect x="533.6" y="132" width="10" height="10" rx="2" fill="#7C8CF8"/><text class="mono lg" x="551.6" y="141" fill="#E6EDF3">HTML</text><text class="mono lg" x="551.6" y="158" fill="#8B98A5">12.9%</text>
-      <rect x="700.8" y="132" width="10" height="10" rx="2" fill="#5EEAD4"/><text class="mono lg" x="718.8" y="141" fill="#E6EDF3">C++</text><text class="mono lg" x="718.8" y="158" fill="#8B98A5">8.0%</text>
+      <rect x="32.0" y="132" width="10" height="10" rx="2" fill="#22D3EE"/><text class="mono lg" x="50.0" y="141" fill="#E6EDF3">JavaScript</text><text class="mono lg" x="50.0" y="158" fill="#8B98A5">50.8%</text>
+      <rect x="199.2" y="132" width="10" height="10" rx="2" fill="#4C8DFF"/><text class="mono lg" x="217.2" y="141" fill="#E6EDF3">CSS</text><text class="mono lg" x="217.2" y="158" fill="#8B98A5">16.3%</text>
+      <rect x="366.4" y="132" width="10" height="10" rx="2" fill="#FFB547"/><text class="mono lg" x="384.4" y="141" fill="#E6EDF3">Java</text><text class="mono lg" x="384.4" y="158" fill="#8B98A5">14.0%</text>
+      <rect x="533.6" y="132" width="10" height="10" rx="2" fill="#7C8CF8"/><text class="mono lg" x="551.6" y="141" fill="#E6EDF3">HTML</text><text class="mono lg" x="551.6" y="158" fill="#8B98A5">11.8%</text>
+      <rect x="700.8" y="132" width="10" height="10" rx="2" fill="#5EEAD4"/><text class="mono lg" x="718.8" y="141" fill="#E6EDF3">C++</text><text class="mono lg" x="718.8" y="158" fill="#8B98A5">7.1%</text>
     </g>
     <line x1="32" y1="180" x2="868" y2="180" stroke="#16202B"/>
-    <text class="mono" x="32" y="200" font-size="10" letter-spacing="1.1" fill="#8B98A5">5 PUBLIC REPOSITORIES &#183; LAST PUSH 2026-09-08 &#183; PRIVATE AND IN-PROGRESS WORK NOT INCLUDED</text>
+    <text class="mono" x="32" y="200" font-size="10" letter-spacing="1.1" fill="#8B98A5">5 PUBLIC REPOSITORIES &#183; LAST PUSH 2026-09-09 &#183; PRIVATE AND IN-PROGRESS WORK NOT INCLUDED</text>
     <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#16202B"/>
   </g>
 </svg>
